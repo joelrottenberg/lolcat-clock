@@ -8,21 +8,29 @@ var partyTime = 17;
 var napTime = lunchTime + 2;
 
 var message = document.getElementById('timeEvent');
+var lolcat = document.getElementById('lolcat');
+var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/wakeUpTime.jpg";
 
-if (time == partyTime);{
+
+if (time == partyTime){
     messageText = "IZ PARTEE TIME!!";
-}else if (time == napTime){
-    messageText = "IZ NAP TIME...";
-}else if (time == lunchTime){
+  image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg";
+} else if (time == napTime) {
+    messageText = "IZ NAP TIME…";
+  image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat2.jpg";
+} else if (time == lunchTime) {
     messageText = "IZ NOM NOM NOM TIME!!";
-}else if (time == wakeupTime){
+  image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat3.jpg";
+} else if (time == wakeupTime) {
     messageText = "IZ TIME TO GETTUP.";
-}else if (time < noon){
-    messageText = "Good morning, Mate!";
-}else if (time > evening){
-    messageText = "Good Evening, Mate!";
-}else{
-    messageText = "Good afternoon, Mate!";
+  image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
+} else if (time < noon) {
+  messageText = "Good morning!";
+} else if (time > evening) {
+  messageText = "Good Evening!";
+} else {
+  messageText = "Good afternoon!";
 }
 
 message.innerText = messageText;
+lolcat.src = image;
