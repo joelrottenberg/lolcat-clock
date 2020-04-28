@@ -1,3 +1,5 @@
+var partyTimeButton = document.getElementById("partyTimeButton");
+
 var noon = 12;
 var evening = 18; // 6PM
 var wakeupTime = 9; // 9AM
@@ -84,3 +86,35 @@ var showCurrentTime = function()
    var oneSecond = 1000; 
 
    setInterval( updateClock, oneSecond);
+
+
+   var isPartyTime = false;
+
+   var partyEvent = function() {
+
+    if (isPartyTime === false) {      
+      isPartyTime = true;
+      time = partyTime;
+      partyTimeButton.innerText = "PARTY TIME!";
+    partyTimeButton.style.backgroundColor = "#222";
+    } else {
+      isPartyTime = false;
+      time = new Date().getHours();
+      partyTimeButton.innerText = "PARTY OVER";
+      partyTimeButton.style.backgroundColor = "#0A8DAB";
+    }
+};
+
+var lunchEvent = function() {
+    lunchTime = lunchTimeSelector.value;
+};
+
+var wakeUpEvent = function() {
+  wakeupTime = wakeUpTimeSelector.value;
+};
+
+var napEvent = function() {
+    napTime = napTimeSelector.value;
+};
+
+partyTimeButton.addEventListener('click', partyEvent);
