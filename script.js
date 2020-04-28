@@ -7,6 +7,8 @@ var lunchTime = 12;
 var partyTime = 17;
 var napTime = lunchTime + 2;
 
+var message = document.getElementById('timeEvent');
+
 if (time == partyTime);{
     messageText = "IZ PARTEE TIME!!";
 }else if (time == napTime){
@@ -23,4 +25,4 @@ if (time == partyTime);{
     messageText = "Good afternoon, Mate!";
 }
 
-console.log(messageText);
+message.innerText = messageText;
