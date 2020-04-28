@@ -1,9 +1,5 @@
 body {
   background-color: #8dc6f7;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-flow: row wrap;
 }
 .page {
   width: 80%;
@@ -73,5 +69,5 @@ blockquote:after { content: '"'; }
 footer p {
   text-transform: uppercase;
   font-size: 12px;
-  text-decoration:none;
+  
 }
