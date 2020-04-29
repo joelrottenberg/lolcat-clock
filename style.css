@@ -27,7 +27,7 @@ h4 {
 h4 #clock {
   font-size: 36px;
   display: block;
-  padding: 5px 0px;
+  padding: 5px 0px;_
 }
 h1, h2, h3, h6 {
   font-family: 'Bungee Shade', cursive;
@@ -69,5 +69,5 @@ blockquote:after { content: '"'; }
 footer p {
   text-transform: uppercase;
   font-size: 12px;
-  
+
 }
