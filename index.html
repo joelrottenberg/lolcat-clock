@@ -4,7 +4,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
   <div class="page">
@@ -12,7 +13,7 @@
       <h1>LOLCAT CLOCK</h1>
     </header>
 
-    <h4>
+    <h4 id="clockSpace">
       I CAN HAZ TIME?? 
       <span id="clock">Clock goes here</span>
     </h4>
@@ -22,7 +23,8 @@
     <blockquote id="timeEvent">This is where time events are reported</blockquote>
 
 
-    set Wake Up Time
+    <div id="selecter-section">
+      <h4 id="time-selector">set Wake Up Time</h4>
     <select id="wakeUpTimeSelector">
       <option value="1">1 AM – 2AM</option>
       <option value="2">2 AM – 3AM</option>
@@ -50,7 +52,7 @@
       <option value="24">12 AM – 1AM</option>
     </select>
     
-    set Lunch Time
+    <h4 id="time-selector">set Lunch Time</h4>
       <select id="lunchTimeSelector">
         <option value="1">1 AM – 2AM</option>
         <option value="2">2 AM – 3AM</option>
@@ -78,7 +80,7 @@
         <option value="24">12 AM – 1AM</option>
       </select>
     
-    set Nap Time
+    <h4 id="time-selector">set Nap Time</h4>
     <select id="napTimeSelector">
       <option value="1">1 AM – 2AM</option>
       <option value="2">2 AM – 3AM</option>
@@ -105,15 +107,22 @@
       <option value="23">11 PM – 12AM</option>
       <option value="24">12 AM – 1AM</option>
       </select>
-      <br><br>
+    </div>
     
-    <h5>Press the on/off "Party Time Button" <br>to change the image and time message</h5>
-    <button id="partyTimeButton">Party Time!</button>
-    <br><br>
+    <div id="button">
+      <p id="button-instructions">Press the on/off "Party Time Button" <br>to change the image and time message</p>
+      <button id="partyTimeButton">Party Time!</button>
+    </div>
 
     <footer>
-      <a href="https://en.wikipedia.org/wiki/Lolcat" target="_blank">see more about lolcat history</a>
-      <p>© JR 2020</p>
+      <div class="history">
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Lolcat" target="_blank">read here about the lolcat history</a>
+        </p>
+      </div>
+      <div class="copyright">
+        <p>© JR 2020</p>
+      </div>
     </footer>
   </div>
 
