@@ -180,9 +180,9 @@ blockquote {
   font: 2em/1em 'Open Sans', sans-serif;
   -webkit-text-stroke: 1px black;
   text-shadow: 2px 2px #000;
-  margin: -100px 0 100px 0;
+  margin: -110px 0 100px 0;
   color: #fff;
-  width: 60%;
+  width: 80%;
 }
 
 blockquote:before { content: '"'; }
