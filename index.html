@@ -3,7 +3,7 @@
   <title>LOLCAT CLOCK</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
@@ -13,6 +13,7 @@
       <h1>LOLCAT CLOCK</h1>
     </header>
 
+<div class="cal-1">
     <h4 id="clockSpace">
       I CAN HAZ TIME?? 
       <span id="clock">Clock goes here</span>
@@ -22,7 +23,8 @@
 
     <blockquote id="timeEvent">This is where time events are reported</blockquote>
 
-
+</div>
+<div class="cal-2">
     <div id="selecter-section">
       <h4 id="time-selector">set Wake Up Time</h4>
     <select id="wakeUpTimeSelector">
@@ -110,9 +112,17 @@
     </div>
     
     <div id="button">
-      <p id="button-instructions">Press the on/off "Party Time Button" <br>to change the image and time message</p>
+      <p id="button-instructions">Press the on/off "Party Time Button" to change the image message when it's party time or party is over.</p>
       <button id="partyTimeButton">Party Time!</button>
     </div>
+</div>
+
+<div class="cal-3">
+  <div id="instructions">
+    <h4>Instructions</h4>
+    <p>The LOLCat Clock delivers a different LOLCat themed message depending on what time of day you're visiting the site.</p>
+    <p>For example, if it’s morning the LOLCat might say “Good morning!”, and if it’s another time of day it might say “Good day!” And so on.</p>
+  </div>
 
     <footer>
       <div class="history">

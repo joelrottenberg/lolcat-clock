@@ -178,7 +178,6 @@ blockquote {
   align-items: center;
   flex-flow: row wrap;
   font: 2em/1em 'Open Sans', sans-serif;
-  -webkit-text-stroke: 1px black;
   text-shadow: 2px 2px #000;
   margin: -110px 0 100px 0;
   color: #fff;
@@ -214,10 +213,11 @@ blockquote:after { content: '"'; }
 #wakeUpTimeSelector, #lunchTimeSelector, #napTimeSelector {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  lign-items: center;
   margin: 10px;
   padding: 10px;
   border-radius: 20px;
+  height: auto;
 }
 #button {
   border:1px solid #222;
@@ -370,8 +370,8 @@ footer .copyright {
 
 
 .page {
-  width: 90%;
-  max-width: 900px;  
+  width: 90%;  
+  height: auto;
   margin: 0 auto;
   padding: 0;
   background-color: #8dc6f7;
@@ -380,62 +380,108 @@ header{
   font-size: .7em;
   width: 100%;
   justify-content: space-around;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+.cal-1, .cal-2, .cal-3 {
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
   margin: 0;
   padding: 0;
 }
 
 #clockSpace { 
-  font-size: .7em;
-  width: 50%;
+  width: 100%;
   margin: 0;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 #lolcat { 
-  width: 50%;
-  max-height: 200px;
-  margin: 5px;
+  width: 80%;
 }
-blockquote {  
-  font-size: 1em;
-  margin: -100px 0 0 0;
-  width: 60%;
+blockquote { 
+  margin: -70px 0 0 0;
+  width: 100%;
+  color: #fff;
+  font-size: .9em;
 }
 #selecter-section {
   margin: 10px;
   width: 100%;
+  font-size: .4em;
 }
 #time-selector {
-  font-size: .5em;
   margin: 10px; 
   }
 
 #wakeUpTimeSelector, #lunchTimeSelector, #napTimeSelector {
-  margin: 0;
+  margin: 10px;
   padding: 0;
-  font-size: .5em;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;  
 }
 
 #button {  
-  margin: 10px 0 10px 0;
-  padding: 0;
+  margin: 20px;
+  padding: 10px;
   width: 300px;
-  height: 100px;
+  height: 200px;  
 }
 #button-instructions {
   margin: 10px 0 0 0;
-  font-size: .4em;
+  font-size: .6em;
+  padding: 10px;
+  color: #545452;
 }
 #partyTimeButton {
   width: 75px;
   height: 50px;
+  margin: 20px 0 0 0;
   font-size: .5em;
-  margin: 10px 0 0 0;
+}
+#instructions {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;  
+  border: 1px solid #999;
+  border-radius: 15px;
+  background-color: #f8fcc0;
+  margin: 0;
+  padding: 10px;
+}
+#instructions h4, p {
+  font-size: .5em;
+  color: #333330;
+  line-height: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+
+}
+footer {
+  margin: 20px;
+  padding: 10px;
+  font-size: 1em;
 }
 
-footer {
-  margin: 0;
-  font-size: .5em;
-  width: 100%;
+footer .history {
+  margin: 10px;
 }
 footer p {
   margin: 0;
@@ -444,6 +490,7 @@ footer .copyright {
   font-size: .7em;
   width: 100%;
   margin-top: 10px;
+  flex-shrink: 0;
 }
 /* ==========================================================================
    Print styles.
