@@ -181,7 +181,7 @@ blockquote {
   text-shadow: 2px 2px #000;
   margin: -110px 0 100px 0;
   color: #fff;
-  width: 80%;
+  width: 100%;
 }
 
 blockquote:before { content: '"'; }
@@ -192,6 +192,7 @@ blockquote:after { content: '"'; }
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
   margin: 20px auto;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -242,8 +243,20 @@ blockquote:after { content: '"'; }
   padding: 10px 0;
   margin: 20px 0 40px 0;
 }
+#instructions {
+  margin: 50px 0 0 0;
+}
+#instructions h4, p {
+  font-size: .5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+}
+#instructions p {
+  margin: 50px 0 0 0;
+}
 footer {
-  margin: 50px auto;
+  margin: 80px 0 0 0;
   font-size: 1.1em;
   display: flex;
   align-items: center;
@@ -256,7 +269,11 @@ footer a {
   justify-content: center;
   flex-flow: row wrap;
 }
+footer .history {
+  font-family: 'Open Sans', sans-serif;
+}
 footer .copyright {
+  margin: 50px; 
   text-transform: uppercase;
   width: 30%;
   font-size: 1em;
@@ -372,7 +389,7 @@ footer .copyright {
 .page {
   width: 90%;  
   height: auto;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background-color: #8dc6f7;
 }
@@ -380,7 +397,6 @@ header{
   font-size: .7em;
   width: 100%;
   justify-content: space-around;
-  margin: 0 0 50px 0;
   padding: 0;
 }
 
@@ -432,7 +448,7 @@ blockquote {
 }
 
 #button {  
-  margin: 20px;
+  margin: 10px;
   padding: 10px;
   width: 300px;
   height: 200px;  
@@ -452,6 +468,8 @@ blockquote {
 #instructions {
   width: 50%;
   height: 300px;
+  font-size: .5em;  
+  line-height: 1.6em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,25 +477,23 @@ blockquote {
   border: 1px solid #999;
   border-radius: 15px;
   background-color: #f8fcc0;
-  margin: 0;
-  padding: 10px;
+  margin: 10px;
+  padding: 20px;
 }
-#instructions h4, p {
-  font-size: .5em;
+#instructions h4 {
   color: #333330;
-  line-height: 1.6em;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 10px;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-
+  margin: 0;
+}
+#instructions p {
+  margin: 0;
 }
 footer {
-  margin: 20px;
+  margin: 10px;
   padding: 10px;
-  font-size: 1em;
+  font-size: .5em;
 }
 
 footer .history {
@@ -489,8 +505,7 @@ footer p {
 footer .copyright {
   font-size: .7em;
   width: 100%;
-  margin-top: 10px;
-  flex-shrink: 0;
+  margin: 0;
 }
 /* ==========================================================================
    Print styles.
