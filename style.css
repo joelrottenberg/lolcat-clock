@@ -109,6 +109,10 @@ body {
   color: #872341;
   text-transform: uppercase;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 } 
 a {
   color: #5c5c5e;
@@ -387,8 +391,7 @@ footer .copyright {
 
 
 .page {
-  width: 90%;  
-  height: auto;
+  width: 90%;
   margin: 0;
   padding: 0;
   background-color: #8dc6f7;
@@ -405,7 +408,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column;
   margin: 0;
   padding: 0;
 }
@@ -415,8 +418,9 @@ header{
   margin: 0;
   font-size: 1em;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   
 }
 #lolcat { 
@@ -426,7 +430,7 @@ blockquote {
   margin: -70px 0 0 0;
   width: 100%;
   color: #fff;
-  font-size: .9em;
+  font-size: .8em;
 }
 #selecter-section {
   margin: 10px;
@@ -448,62 +452,63 @@ blockquote {
 }
 
 #button {  
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   width: 300px;
-  height: 200px;  
+  height: 150px;  
 }
 #button-instructions {
   margin: 10px 0 0 0;
-  font-size: .6em;
+  font-size: .5em;
   padding: 10px;
   color: #545452;
 }
 #partyTimeButton {
-  width: 75px;
+  width: 125px;
   height: 50px;
   margin: 20px 0 0 0;
   font-size: .5em;
 }
 #instructions {
   width: 50%;
-  height: 300px;
-  font-size: .5em;  
-  line-height: 1.6em;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;  
   border: 1px solid #999;
   border-radius: 15px;
+  
   background-color: #f8fcc0;
   margin: 10px;
   padding: 20px;
 }
+#instructions h4, p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .4em;
+  
+}
 #instructions h4 {
-  color: #333330;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0;
+  color: #333330;  
+  margin: 10px;
 }
 #instructions p {
-  margin: 0;
+  margin: 5px;
 }
 footer {
   margin: 10px;
   padding: 10px;
-  font-size: .5em;
+  font-size: 1.3em;
 }
 
 footer .history {
   margin: 10px;
+  font-weight: 800;
 }
 footer p {
   margin: 0;
 }
-footer .copyright {
-  font-size: .7em;
+footer .copyright {  
   width: 100%;
   margin: 0;
 }
