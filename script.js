@@ -1,4 +1,3 @@
-var partyTimeButton = document.getElementById("partyTimeButton");
 var napTimeSelector =  document.getElementById("napTimeSelector");
 var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
 var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
@@ -114,9 +113,7 @@ var wakeUpEvent = function() {
 var napEvent = function() {
     napTime = napTimeSelector.value;
 };
-
-
-partyTimeButton.addEventListener('click', partyEvent);
+$(partyTimeButton).click(partyEvent);
 napTimeSelector.addEventListener('change', napEvent);
 lunchTimeSelector.addEventListener('change', lunchEvent);
 wakeUpTimeSelector.addEventListener('change', wakeUpEvent);
